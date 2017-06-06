@@ -8,26 +8,21 @@
 
         <referenceBlock name="content.aside">
             <block  class="Yotpo\Yotpo\Block\Yotpo" name="widget_div" template="widget_div.phtml"/>
-        </referenceBlock> 
+        </referenceBlock>
 
        <referenceContainer name="product.info.main">
-            <block  class="Yotpo\Yotpo\Block\Yotpo" name="bottomline" as="other" template="bottomline.phtml" before="product.info.addto"/> 
-        </referenceContainer>  
+            <block  class="Yotpo\Yotpo\Block\Yotpo" name="bottomline" as="other" template="bottomline.phtml" before="product.info.addto"/>
+        </referenceContainer>
 
 		<!-- Add yotpo widget div to product page  -->
 <!--         <referenceContainer name="product.info.main">
 			<block class="Yotpo\Yotpo\Block\Yotpo" name="widget_div" template="widget_div.phtml"/>
-        </referenceContainer>	 --> 
+        </referenceContainer>	 -->
 
 		<!-- Add yotpo widget div to product page below the add to cart button. -->
 <!--         <referenceContainer name="product.info.addtocart">
 			<block class="Yotpo\Yotpo\Block\Yotpo" name="yotpo_1" template="widget_div.phtml"/>
-        </referenceContainer>	 -->                  
+        </referenceContainer>	 -->
                       
-	   <!-- Add yotpo pixel for order conversion tracking     --> 
-	    <referenceContainer name="order.success.additional.info">
-			<block class="Yotpo\Yotpo\Block\Conversion" name="yotpo_conversion" template="conversion.phtml" cacheable="false"/>
-        </referenceContainer>	        
-
     </body>
 </page>
